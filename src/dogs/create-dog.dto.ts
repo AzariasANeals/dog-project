@@ -1,5 +1,5 @@
-export class DogDto {
-  public id: number;
+export class CreateDogDto {
+  public id: string;
   public name: string;
   public age: number;
 }
