@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 
 export class CreateDogDto {
-   id: number;
+   id: string;
    name: string;
    age: number;
 }

@@ -1,5 +1,8 @@
 /* eslint-disable prettier/prettier */
-
+    //console.log(i);
+    //createDogDto.id = i[0];
+    //createDogDto.name = i[1];
+    //createDogDto.age = parseInt(i[2]);
 import {
   Controller,
   Get,
@@ -24,12 +27,10 @@ export class DogsController {
   dogs = mydogs;
   @Post()
   create(@Body() createDogDto: CreateDogDto) {
-    //console.log(i);
-    //createDogDto.id = i[0];
-    //createDogDto.name = i[1];
-    //createDogDto.age = parseInt(i[2]);
+    console.log(createDogDto.age)
     console.log(createDogDto);
     console.log(CreateDogDto);
+    this.dogs.push(createDogDto)
     return createDogDto;
   }
 
